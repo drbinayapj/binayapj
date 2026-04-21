@@ -4,97 +4,173 @@
 <meta charset="UTF-8">
 <title>Dr. Binaya Kumar Sahu</title>
 <link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
 
-<header class="hero">
-    <img src="profile.jpg" class="profile">
-    <h1>Dr. Binaya Kumar Sahu</h1>
-    <p>Assistant Professor | Nanomaterials | Sensing | Electrocatalysis</p>
-    <a href="Binaya_CV.pdf" download class="btn">📄 Download CV</a>
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">
+        <img src="logo.png">
+    </div>
+
+    <div class="header-text">
+        <h1>Dr. Binaya Kumar Sahu</h1>
+        <p>Assistant Professor, Physics<br>Panchayat Degree College, Bargarh</p>
+    </div>
+
+    <div class="header-actions">
+        <p>📧 binayamsc12@gmail.com</p>
+        <a href="Binaya_CV.pdf" class="btn" download>Download CV</a>
+    </div>
 </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#projects">Project</a>
-    <a href="#publications">Publications</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section class="card" id="about">
+<!-- ABOUT -->
+<section class="card">
 <h2>About</h2>
-<p>
-Dr. Binaya Kumar Sahu is an Assistant Professor in Physics with expertise in SnO₂ nanomaterials, 
-carbon quantum dots, plasmonics, and sensing technologies for energy and environmental applications.
-</p>
-</section>
-
-<section class="card" id="research">
-<h2>Research Areas</h2>
-<div class="grid">
-<div class="box">SnO₂ Nanostructures</div>
-<div class="box">Carbon Quantum Dots</div>
-<div class="box">SERS & Plasmonics</div>
-<div class="box">Gas Sensing (NH₃)</div>
-<div class="box">Photocatalysis</div>
-<div class="box">Hydrogen Evolution</div>
+<div class="about">
+    <img src="profile.jpg">
+    <p>
+    Dr. Binaya Kumar Sahu works on nanomaterials including SnO₂, carbon quantum dots,
+    SERS, sensing, and electrocatalysis for energy and environmental applications.
+    </p>
 </div>
 </section>
 
-<section class="card" id="projects">
-<h2>Featured Project</h2>
-<p><strong>NephroMask:</strong> A wearable flexible breath sensor for early detection of kidney disease using ammonia sensing and AI/ML integration.</p>
+<!-- EDUCATION -->
+<section class="card">
+<h2>Education</h2>
+<ul>
+<li>PhD (IGCAR-HBNI, 2015–2021) 
+<a href="#" target="_blank">Thesis Link</a></li>
+<li>MSc Physics – Pondicherry University</li>
+<li>BSc Physics – Sambalpur University</li>
+</ul>
 </section>
 
-<section class="card" id="publications">
+<!-- EXPERIENCE -->
+<section class="card">
+<h2>Experience</h2>
+<ul>
+<li>Assistant Professor – Panchayat Degree College</li>
+<li>Postdoctoral Fellow – NISER (2022–2023)</li>
+<li>Research Scientist – NISER (2021–2022)</li>
+</ul>
+</section>
+
+<!-- RESEARCH -->
+<section class="card">
+<h2>Research Interests</h2>
+<ul>
+<li>SnO₂ Nanostructures</li>
+<li>Carbon Quantum Dots</li>
+<li>SERS & Plasmonics</li>
+<li>Gas Sensing</li>
+<li>Photocatalysis</li>
+</ul>
+</section>
+
+<!-- PROJECTS -->
+<section class="card">
+<h2>Projects</h2>
+<div class="projects">
+<div class="project">NephroMask – Breath sensor for kidney disease</div>
+<div class="project">SnO₂ Photocatalysis for dye degradation</div>
+<div class="project">SERS-based detection platform</div>
+</div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section class="card">
 <h2>Publications</h2>
-
-<p>
-📊 Citations: <strong>Update from Scholar</strong> |
-h-index: <strong>Update</strong>
-</p>
-
-<p>
-🔗 <a href="https://scholar.google.com/citations?hl=en&user=8vHuGAgAAAAJ" target="_blank">
-View Google Scholar Profile
-</a>
-</p>
-
+<p><a href="https://scholar.google.com/citations?hl=en&user=8vHuGAgAAAAJ" target="_blank">Google Scholar</a></p>
 <ol>
-<li><strong>Sahu B.K.</strong> et al., Physica E, 2018.</li>
-<li><strong>Sahu B.K.</strong> et al., J. Phys. Chem. Solids, 2019.</li>
-<li><strong>Sahu B.K.</strong> et al., Ionics, 2019.</li>
-<li><strong>Sahu B.K.</strong> et al., ACS Applied Materials & Interfaces, 2020.</li>
-<li><strong>Sahu B.K.</strong> et al., Chemosphere, 2021.</li>
-<li><strong>Sahu B.K.</strong> et al., ACS Applied Nano Materials, 2022.</li>
-<li><strong>Sahu B.K.</strong> et al., Nanotechnology, 2023.</li>
-<li><strong>Sahu B.K.</strong> et al., Journal of Physical Chemistry C, 2024.</li>
-<li><strong>Sahu B.K.</strong> et al., Journal of Alloys & Compounds, 2025.</li>
+<li><b>Sahu B.K.</b> et al., ACS AMI, 2020</li>
+<li><b>Sahu B.K.</b> et al., Chemosphere, 2021</li>
+<li><b>Sahu B.K.</b> et al., Nanotechnology, 2023</li>
 </ol>
-
 </section>
 
-<section class="card" id="gallery">
-<h2>Research Gallery</h2>
-<div class="grid">
+<!-- METRICS -->
+<section class="card">
+<h2>Research Metrics</h2>
+<p>Citations: XXXX | h-index: XX | i10-index: XX</p>
+</section>
+
+<!-- CHART -->
+<section class="card">
+<h2>Publication Analytics</h2>
+<canvas id="chart"></canvas>
+</section>
+
+<!-- TEACHING -->
+<section class="card">
+<h2>Teaching</h2>
+<p>Physics, Nanoscience, Materials Science</p>
+</section>
+
+<!-- STUDENTS -->
+<section class="card">
+<h2>Student Guidance</h2>
+
+<h3>PG Students</h3>
+<ul>
+<li><a href="student1.pdf">Student 1 – Topic</a></li>
+<li><a href="student2.pdf">Student 2 – Topic</a></li>
+</ul>
+
+<h3>PhD (Ongoing)</h3>
+<p>Gas sensing using nanomaterials</p>
+</section>
+
+<!-- AWARDS -->
+<section class="card">
+<h2>Awards & Fellowships</h2>
+<ul>
+<li>Outstanding Doctoral Student Award</li>
+<li>APS Distinguished Student Award</li>
+<li>Best Poster Awards</li>
+</ul>
+</section>
+
+<!-- LAB -->
+<section class="card">
+<h2>Research Lab</h2>
+<p>Advanced nanomaterials and sensing research lab.</p>
+<img src="lab1.jpg">
+<img src="lab2.jpg">
+</section>
+
+<!-- GALLERY -->
+<section class="card">
+<h2>Gallery</h2>
+<div class="gallery">
 <img src="xrd.jpg">
 <img src="pl.jpg">
-<img src="lab.jpg">
+<img src="setup.jpg">
 </div>
 </section>
 
-<section class="card" id="contact">
+<!-- CONTACT -->
+<section class="card">
 <h2>Contact</h2>
 <p>Email: binayamsc12@gmail.com</p>
-<p>Phone: +91 9444209475</p>
-<p>Location: Odisha, India</p>
+<p>Phone: +91XXXXXXXXXX</p>
 </section>
 
-<footer>
-<p>© 2026 Dr. Binaya Kumar Sahu</p>
-</footer>
+<script>
+new Chart(document.getElementById("chart"), {
+    type: 'bar',
+    data: {
+        labels: ['2020','2021','2022','2023','2024'],
+        datasets: [
+        {label:'Papers', data:[2,3,2,3,2]},
+        {label:'Citations', data:[10,30,50,70,90]}
+        ]
+    }
+});
+</script>
 
 </body>
 </html>
